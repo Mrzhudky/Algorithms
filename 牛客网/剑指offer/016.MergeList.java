@@ -41,27 +41,20 @@ class Solution {
             list2 = list2.next;
             thisNode.next = null;
         }
-        while (list1 != null){
-            if(head== null){
+        if (list1 != null){
+            if(head == null){
                 head = list1;
-                thisNode = list1;
             }else{
                 thisNode.next = list1;
-                thisNode = thisNode.next;
             }
-            list1 = list1.next;
-            thisNode.next = null;
+           
         }
-        while (list2 != null){
+        if (list2 != null){
             if(head == null){
                 head = list2;
-                thisNode = list2;
             }else {
                 thisNode.next = list2;
-                thisNode = thisNode.next;
             }
-            list2 = list2.next;
-            thisNode.next = null;
         }
         return head;
     }
