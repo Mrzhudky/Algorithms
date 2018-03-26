@@ -40,17 +40,3 @@ class Solution {
     }
 }
 
-
-public class Main {
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] inputData = new int[]{1,3,5,7,2,4,6};
-
-        for (int data :inputData
-             ) {
-            System.out.print(data);
-        }
-
-    }
-}
