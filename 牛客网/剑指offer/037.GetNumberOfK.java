@@ -1,19 +1,4 @@
 package com.company;
-<<<<<<< HEAD
-/**
- * 华为实习20180410机试题：计算两个长整数的乘积
- * 例：
- * 输入：
- * 1234
- * 4321
- * 输出：
- * 5332114
- * @Author zhudky
- * @Version v1.0.0 2018.04.10
- */
-
-import java.util.*;
-=======
 import java.util.*;
 
 /**
@@ -88,25 +73,17 @@ public class Main {
             }
             middle = (lower + high)>>1;
         }
->>>>>>> a9bdefc68480004da862732e931fc47efe6f355c
 
         int sum = (endIndex - startIndex)*upFlag +1;
 
         return sum;
     }
 
-<<<<<<< HEAD
-
-    public static void main(String[] args) {
-
-=======
     public static void main(String[] args) {
         Main m = new Main();
         int[] array = new int[]{5,4,3,3,3,3};
         int[] array2 = new int[]{1,3,3,3,3,4,5};
         int result = m.GetNumberOfK(array2,2);
         System.out.println(result);
->>>>>>> a9bdefc68480004da862732e931fc47efe6f355c
     }
 }
-
