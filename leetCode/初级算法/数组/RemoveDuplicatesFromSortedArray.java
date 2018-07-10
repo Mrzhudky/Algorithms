@@ -19,6 +19,7 @@ package com.company;
 
 
 public class Main {
+	//初始写法，通过，25ms
     public int removeDuplicates(int[] nums) {
         if(nums == null || nums.length == 0){
             return 0;
@@ -36,7 +37,24 @@ public class Main {
         return j+1;
     }
 
-
+	//修改后，通过，10ms
+	public int removeDuplicates(int[] nums) {
+		if(nums == null ){
+			return 0;
+		}
+		if(nums.length<2){
+			return nums.length;
+		}
+		int len = nums.length;
+		int j=0;
+		for(int i=1;i<len;i++){
+			if(nums[i] != nums[j]){ 
+				nums[++j]=nums[i];
+			}
+		}
+		return j+1;
+    }
+	
     public static void main(String[] args) {
         Main main = new Main();
         int[] nums = new int[]{0,0,1,1,1,2,2,3,3,4};
